@@ -25,7 +25,7 @@ modifying the code.
 
 ## How to Run
 ### Prerequisites
-- Python 3.11 installed (https://www.python.org/downloads/)
+- Python 3.14 installed (https://www.python.org/downloads/)
 - VS Code installed (https://code.visualstudio.com/)
 
 ### Steps
