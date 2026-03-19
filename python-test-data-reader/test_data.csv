@@ -1,0 +1,8 @@
+username,password,expected
+shath,john,pass
+edwin,edwin123,pass
+James,,fail
+,kpail1123,fail
+,,fail
+Kevin,,fail
+Thomas,sjqwg,pass
