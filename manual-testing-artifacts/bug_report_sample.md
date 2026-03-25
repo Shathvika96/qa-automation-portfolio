@@ -1,34 +1,56 @@
-# Bug Report Sample
+# Bug Report
 
-## BUG_001 - Login button allows submission with empty required fields
+## BUG_001 - Login form submits without validating required fields
 
 **Module:** User Login  
 **Severity:** Medium  
 **Priority:** High  
-**Environment:** Web application - Chrome browser - Windows 10  
+**Environment:** Web | Chrome (latest) | Windows 10  
 **Reported By:** Shathvika Kamalanathan  
 **Status:** Open  
 
-**Description:**  
-The login form allows the user to click the Login button without entering a username or password. The system does not display clear validation messages for the required fields.
+---
 
-**Preconditions:**  
-- User is on the login page
+## Description
+The login form allows submission when both username and password fields are empty. No validation message is displayed to the user.
 
-**Steps to Reproduce:**  
+---
+
+## Preconditions
+- User is on the login page  
+
+---
+
+## Steps to Reproduce
 1. Navigate to the login page  
-2. Leave the username field blank  
-3. Leave the password field blank  
-4. Click the Login button  
+2. Leave the username field empty  
+3. Leave the password field empty  
+4. Click the "Login" button  
 
-**Expected Result:**  
-Validation messages should be displayed for both required fields, and the user should not be allowed to proceed.
+---
 
-**Actual Result:**  
-The login form is submitted without showing proper validation messages.
+## Expected Result
+- Validation messages should be displayed for required fields  
+- Form submission should be prevented  
 
-**Reproducibility:**  
-Always  
+---
 
-**Notes:**  
-This issue affects input validation and may confuse users during login.
+## Actual Result
+- Form is submitted without validation  
+- No error message is displayed  
+
+---
+
+## Reproducibility
+- Always  
+
+---
+
+## Impact
+- Poor user experience due to missing validation  
+- Invalid requests may be sent to backend systems  
+
+---
+
+## Notes
+- Input validation should be enforced before form submission  
